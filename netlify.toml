@@ -1,6 +1,7 @@
 [build]
   publish = "dist"
   command = "npm run build"
+  functions = "netlify/functions"
   environment = { NODE_VERSION = "24", NODE_ENV = "production" }
 
 [template.environment]
