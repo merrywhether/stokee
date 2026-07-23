@@ -48,7 +48,7 @@ const OverlayLogin = (props) => {
         {
           type: 'h1',
         },
-        'Ackee',
+        globalThis.env.title,
       ),
       h(
         Text,

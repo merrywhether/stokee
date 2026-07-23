@@ -7,6 +7,7 @@ The following environment variables are used by Ackee. You can also create a `.e
 - [Username and password](#username-and-password)
 - [TTL](#ttl)
 - [Tracker](#tracker)
+- [Title](#title)
 - [Environment](#environment)
 
 ## Database
@@ -62,6 +63,14 @@ Make sure to adjust the tracking script URL on your sites when changing this opt
 
 ```
 ACKEE_TRACKER=custom name
+```
+
+## Title
+
+Pick a custom title for your Ackee installation. Used for the page title and the login screen. Defaults to `Ackee`.
+
+```
+ACKEE_TITLE=My Analytics
 ```
 
 ## Environment

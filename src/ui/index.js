@@ -13,6 +13,7 @@ export const index = () => {
   return layout('<div id="main"></div>', 'favicon.ico', ['index.css'], ['index.js'], {
     isDemoMode: config.isDemoMode,
     customTracker,
+    title: config.title,
   })
 }
 

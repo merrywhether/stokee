@@ -10,6 +10,19 @@ test('return HTML with body', (t) => {
   t.true(result.includes(body))
 })
 
+test('return HTML with default title', (t) => {
+  const result = layout('', '', [], [])
+
+  t.true(result.includes('<title>Ackee</title>'))
+})
+
+test('return HTML with custom title', (t) => {
+  const title = uuid()
+  const result = layout('', '', [], [], { title })
+
+  t.true(result.includes(`<title>${title}</title>`))
+})
+
 test('return HTML with favicon', (t) => {
   const favicon = uuid()
   const result = layout('', favicon, [], [])

@@ -3,7 +3,7 @@ export default (body, favicon, styles, scripts, variables) => `
 	<html lang="en">
 		<head>
 
-			<title>Ackee</title>
+			<title>${variables?.title ?? 'Ackee'}</title>
 
 			<meta charset="utf-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
